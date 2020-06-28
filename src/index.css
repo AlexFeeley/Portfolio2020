@@ -1,0 +1,41 @@
+/* General Color and Font Theme */
+body {
+    background-color: #282828;
+    padding: 20px;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Content */
+ul.header li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+}
+ul.header {
+    background-color: #282828;
+    padding: 0;
+    text-align: right;
+}
+ul.header li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+}
+.content {
+    background-color: #123c69;
+}
+.content h2 {
+    padding: 0;
+    margin: 0;
+}
+
+/* Active Links */
+.active {
+    border-bottom: solid 1.5px #c8a2c8;
+}
