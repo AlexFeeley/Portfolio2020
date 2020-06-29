@@ -24,7 +24,7 @@ ul.header li a {
     color: white;
     font-weight: bold;
     text-decoration: none;
-    padding: 20px;
+    padding: 10px;
     display: inline-block;
 }
 .content {
@@ -38,4 +38,12 @@ ul.header li a {
 /* Active Links */
 .active {
     border-bottom: solid 1.5px #c8a2c8;
+}
+
+/* Landing Page */
+#vantajs {
+    width: 100%; 
+    height: 100vh;
+    position: absolute;
+    background-size: cover;
 }
