@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import { Navbar, Nav } from 'react-bootstrap';
+
+import '../index.css';
 
 class Navigation extends Component {
 	render() {
@@ -10,7 +11,7 @@ class Navigation extends Component {
                     <Navbar.Brand href = "#home">Alex Feeley</Navbar.Brand>
                     <Navbar.Toggle aria-controls = "responsive-navbar-nav"/>
                     <Navbar.Collapse id = "responsive-navbar-nav">
-                        <Nav className = "mr-auto">
+                        <Nav className = "ml-auto">
                             <Nav.Link href = "#about">About</Nav.Link>
                             <Nav.Link href = "#education">Education</Nav.Link>
                             <Nav.Link href = "#experience">Experience</Nav.Link>
