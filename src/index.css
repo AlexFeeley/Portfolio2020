@@ -18,6 +18,26 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     border-bottom: solid 1.5px #c8a2c8;
 }
 
+.jumbotron {
+    height: 92vh;
+    background-color: #565656 !important;
+}
+.btn {
+    background-color: transparent !important;
+    border: 1.5px solid white !important;
+    border-radius: 50px !important;
+}
+.btn:hover .btn:active {
+    background: #c8a2c8 !important;
+    border: 1.5px solid #c8a2c8 !important;
+    color: #350052 !important;
+    text-decoration: none !important;
+}
+.btn:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
 /* Landing Page */
 /* #vantajs {
     width: 100%; 

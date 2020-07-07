@@ -1,12 +1,13 @@
 import React, { Component } from "react";
+import { BrowserRouter } from "react-router-dom";
 // import {
 //     BrowserRouter as Router,
 //     Route
 // } from "react-router-dom";
 
-// import BIRDS from './vanta/dist/vanta.birds.min';
-import "./index.css";
 import Navigation from './components/Navigation';
+import Landing from './contents/Landing.js';
+import "./index.css";
 
 class Main extends Component {
     // constructor() {
@@ -35,8 +36,11 @@ class Main extends Component {
     // }
     render() {
         return (
-            <div>
-                <Navigation></Navigation>
+            <div id = "body">   
+                <BrowserRouter>
+                    <Navigation/>
+                    <Landing/>
+                </BrowserRouter>
             </div>
         );
     }
