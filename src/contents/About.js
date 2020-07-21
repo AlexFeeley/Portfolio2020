@@ -1,14 +1,23 @@
-import React, { Component } from "react";
+// import React, { Component } from 'react';
+import React from 'react';
+// import { Jumbotron, Container, Button } from "react-bootstrap";
 
-class About extends Component {
-    render() {
-        return (
-            <div>
-                <h2>ABOUT</h2>
-                <p>I am testing that my single page layout works.</p>
-            </div>
-        );
-    }
+// import BIRDS from '../../vanta/dist/vanta.birds.min';
+
+// class About extends Component {
+//     render() {
+//         return (
+//             <h1> Hello, World! </h1>
+//         );
+//     }
+// }
+
+const About = () => {
+    return (
+        <div>
+            <p>Hello, World!</p>
+        </div>
+    );
 }
 
 export default About; 

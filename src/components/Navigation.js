@@ -8,15 +8,15 @@ class Navigation extends Component {
 		return (
             <React.Fragment>
                 <Navbar collapseOnSelect expand = "lg" bg = "dark" variant = "dark" sticky = "top">
-                    <Navbar.Brand href = "#home">Alex Feeley</Navbar.Brand>
+                    <Navbar.Brand href = "#landing">Alex Feeley</Navbar.Brand>
                     <Navbar.Toggle aria-controls = "responsive-navbar-nav"/>
                     <Navbar.Collapse id = "responsive-navbar-nav">
                         <Nav className = "ml-auto">
-                            <Nav.Link href = "#about">About</Nav.Link>
-                            <Nav.Link href = "#education">Education</Nav.Link>
-                            <Nav.Link href = "#experience">Experience</Nav.Link>
-                            <Nav.Link href = "#projects">Projects</Nav.Link>
-                            <Nav.Link href = "#contact">Contact</Nav.Link>
+                            <Nav.Link to = "/about">About</Nav.Link>
+                            <Nav.Link to = "/education">Education</Nav.Link>
+                            <Nav.Link to = "/experience">Experience</Nav.Link>
+                            <Nav.Link to = "/projects">Projects</Nav.Link>
+                            <Nav.Link to = "/contact">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

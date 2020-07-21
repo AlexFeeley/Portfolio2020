@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import { Nav } from 'react-bootstrap';
 import BIRDS from 'vanta/dist/vanta.birds.min';
 import { Jumbotron, Container, Button } from 'react-bootstrap';
+// import About from './About'
 
 class Landing extends Component {
-    constructor() {
-        super()
-        this.vantaRef = React.createRef()
+    constructor(props) {
+        super();
+        this.vantaRef = React.createRef();
     }
     componentDidMount() {
         this.vantaEffect = BIRDS({
@@ -34,7 +36,7 @@ class Landing extends Component {
                     <h1 className = "lead">I'm a Junior at Vanderbilt studying Computer Engineering with a 
                         passion for creating cool things.</h1>
                     <p>
-                        <Button href = "#about">Want to learn more?</Button>
+                        <Button onClick = {this.toggle}><Nav.Link to = "/about">Want to learn more?</Nav.Link></Button>
                     </p>
                 </Container>
             </Jumbotron>
