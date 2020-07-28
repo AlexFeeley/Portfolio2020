@@ -1,47 +1,44 @@
 /* General Color and Font Theme */
 * {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
 body {
-    background-color: #282828;
+    background-color: #838BC2;
     margin: 0;
 }
-h1, h2, h3, h4, h5, h6, p, ul, li {
-    color: white;
+h1, h2, h3, h4, h5, ul, li, p { 
+    color: #333F63;
     font-family: "Poppins", sans-serif;
 }
 
-/* Active Links */
-.active{
-    border-bottom: solid 1.5px #c8a2c8;
+/* Navbar */
+.nav-bar {
+    background-color: #838BC2;
 }
-
-.jumbotron {
-    height: 92vh;
-    background-color: #565656 !important;
+.nav-link {
+    color: #D7D4DD !important; 
+    font-style: bold;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    padding: 8px;
 }
-.btn {
-    background-color: transparent !important;
-    border: 1.5px solid white !important;
-    border-radius: 50px !important;
+.nav-link:hover {
+    border-bottom: 2px solid #333F63;
+    color: #333F63;
+    text-decoration: none;
 }
-.btn:hover .btn:active {
-    background: #c8a2c8 !important;
-    border: 1.5px solid #c8a2c8 !important;
-    color: #350052 !important;
-    text-decoration: none !important;
-}
-.btn:focus {
-    outline: 0;
-    box-shadow: none !important;
+h6 {
+    color: #D7D4DD;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    padding: 8px;
 }
 
 /* Landing Page */
-/* #vantajs {
-    width: 100%; 
-    height: 100vh;
-    position: absolute;
-    background-size: cover;
-} */
+.jumbotron {
+    height: 92vh;
+    background-color: #838BC2;
+    padding: none;
+}

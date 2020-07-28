@@ -17,20 +17,20 @@ import './index.css';
 class Main extends Component {
     render() {
         return (
-            <div id = "vantajs">   
+            <div>   
                 <HashRouter>
-                    <Navbar collapseOnSelect expand = "lg" bg = "dark" variant = "dark" sticky = "top">
+                    <Navbar collapseOnSelect expand = "md" sticky = "top" className = "nav-bar">
                         <Navbar.Brand>
-                            <NavLink to = "/">Alex Feeley</NavLink>
+                            <NavLink to = "/" className = "nav-link">Alex Feeley</NavLink>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls = "responsive-navbar-nav"/>
                         <Navbar.Collapse id = "responsive-navbar-nav">
                             <Nav className = "ml-auto">
-                                <NavLink to = "/about">About</NavLink>
-                                <NavLink to = "/education">Education</NavLink>
-                                <NavLink to = "/experience">Experience</NavLink>
-                                <NavLink to = "/projects">Projects</NavLink>
-                                <NavLink to = "/contact">Contact</NavLink>
+                                <NavLink to = "/about" className = "nav-link">About</NavLink>
+                                <NavLink to = "/education" className = "nav-link">Education</NavLink>
+                                <NavLink to = "/experience" className = "nav-link">Experience</NavLink>
+                                <NavLink to = "/projects" className = "nav-link">Projects</NavLink>
+                                <NavLink to = "/contact" className = "nav-link">Contact</NavLink>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
