@@ -35,7 +35,6 @@ class Main extends Component {
 
                     <div className = "content">
                         <Route exact path = "/" 
-                            // component = { Landing }
                             render = {(props) => (
                                 <Landing {...props} isAuthed = { true }/>
                             )}
