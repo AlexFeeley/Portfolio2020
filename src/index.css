@@ -50,3 +50,32 @@ h1, h2, h3, h4, h5, ul, li, p {
     outline: 0;
     box-shadow: none !important;
 }
+
+/* About Page */
+.jumbotron .about {
+    background-color: #D7D4DD !important;
+}
+.about span, .about a {
+    color: #715C8C;
+}
+.about a:hover, .about a:active {
+    color: #333F63;
+    font-style: bold;
+    text-decoration: none;
+}
+.about a i {
+    font-size: 100px;
+    display: inline-block;
+    margin: 2%;
+    color: #715C8C;
+    text-decoration: none;
+}
+.about a i:hover, .about a i:active {
+    color: #333F63;
+}
+
+/* Education Page */
+
+/* Experience Page */
+
+/* Projects Page */
