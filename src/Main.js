@@ -10,7 +10,6 @@ import About from './contents/About';
 import Education from './contents/Education';
 import Experience from './contents/Experience';
 import Projects from './contents/Projects';
-import Contact from './contents/Contact';
 import './index.css';
 
 
@@ -30,18 +29,21 @@ class Main extends Component {
                                 <NavLink to = "/education" className = "nav-link">Education</NavLink>
                                 <NavLink to = "/experience" className = "nav-link">Experience</NavLink>
                                 <NavLink to = "/projects" className = "nav-link">Projects</NavLink>
-                                <NavLink to = "/contact" className = "nav-link">Contact</NavLink>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
 
-                    <div className="content">
-                        <Route exact path = "/" component = { Landing }/>
+                    <div className = "content">
+                        <Route exact path = "/" 
+                            // component = { Landing }
+                            render = {(props) => (
+                                <Landing {...props} isAuthed = { true }/>
+                            )}
+                        />
                         <Route path = "/about" component = { About }/>
                         <Route path = "/education" component = { Education }/>
                         <Route path = "/experience" component = { Experience }/>
                         <Route path = "/projects" component = { Projects }/>
-                        <Route path = "/contact" component = { Contact }/>
                     </div>
                 </HashRouter>
             </div>

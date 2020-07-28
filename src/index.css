@@ -29,16 +29,24 @@ h1, h2, h3, h4, h5, ul, li, p {
     color: #333F63;
     text-decoration: none;
 }
-h6 {
-    color: #D7D4DD;
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    padding: 8px;
-}
 
 /* Landing Page */
 .jumbotron {
     height: 92vh;
     background-color: #838BC2;
     padding: none;
+}
+.btn {
+    background-color: transparent !important;
+    border: 1.5px solid #D7D4DD !important;
+    border-radius: 50px !important;
+}
+.btn .nav-link:hover {
+    border: none;
+    color: #333F63 !important;
+    text-decoration: none;
+}
+.btn:focus {
+    outline: 0;
+    box-shadow: none !important;
 }
