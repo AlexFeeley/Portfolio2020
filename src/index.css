@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #838BC2;
+    background-color: #D7D4DD;
     margin: 0;
 }
 h1, h2, h3, h4, h5, ul, li, p { 
@@ -13,9 +13,10 @@ h1, h2, h3, h4, h5, ul, li, p {
     font-family: "Poppins", sans-serif;
 }
 .jumbotron {
-    height: 89vh;
-    background-color: #D7D4DD;
+    height: 90vh;
+    /* background-color: #D7D4DD; */
     padding: none;
+    border: none;
 }
 
 /* Navbar */
