@@ -12,6 +12,11 @@ h1, h2, h3, h4, h5, ul, li, p {
     color: #333F63;
     font-family: "Poppins", sans-serif;
 }
+.jumbotron {
+    height: 89vh;
+    background-color: #D7D4DD;
+    padding: none;
+}
 
 /* Navbar */
 .nav-bar {
@@ -30,12 +35,8 @@ h1, h2, h3, h4, h5, ul, li, p {
     text-decoration: none;
 }
 
+
 /* Landing Page */
-.jumbotron {
-    height: 92vh;
-    background-color: #838BC2;
-    padding: none;
-}
 .btn {
     background-color: transparent !important;
     border: 1.5px solid #D7D4DD !important;
@@ -52,9 +53,6 @@ h1, h2, h3, h4, h5, ul, li, p {
 }
 
 /* About Page */
-.jumbotron .about {
-    background-color: #D7D4DD !important;
-}
 .about span, .about a {
     color: #715C8C;
 }
