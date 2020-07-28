@@ -1,46 +1,49 @@
-import React, { Component } from "react";
-import { BrowserRouter } from "react-router-dom";
-// import {
-//     BrowserRouter as Router,
-//     Route
-// } from "react-router-dom";
+import React, { Component } from 'react';
+import {
+  Route,
+  NavLink,
+  HashRouter
+} from 'react-router-dom';
+import { Navbar, Nav } from 'react-bootstrap';
+import Landing from './contents/Landing';
+import About from './contents/About';
+import Education from './contents/Education';
+import Experience from './contents/Experience';
+import Projects from './contents/Projects';
+import Contact from './contents/Contact';
+import './index.css';
 
-import Navigation from './components/Navigation';
-import Landing from './contents/Landing.js';
-import "./index.css";
 
 class Main extends Component {
-    // constructor() {
-    //     super()
-    //     this.vantaRef = React.createRef()
-    // }
-    // componentDidMount() {
-    //     this.vantaEffect = BIRDS({
-    //         el: this.vantaRef.current,
-    //         mouseControls: true,
-    //         touchControls: true,
-    //         scale: 1.00,
-    //         scaleMobile: 1.00,
-    //         backgroundColor: 0x282828,
-    //         color1: 0x350052,
-    //         color2: 0x123c69,
-    //         colorMode: "lerp",
-    //         birdSize: 1.50,
-    //         quantity: 3,
-    //         separation: 15,
-    //         cohesion: 50
-    //     })
-    // }
-    // componentWillUnmount() {
-    //     if (this.vantaEffect) this.vantaEffect.destroy()
-    // }
     render() {
         return (
-            <div id = "body">   
-                <BrowserRouter>
-                    <Navigation/>
-                    <Landing/>
-                </BrowserRouter>
+            <div id = "vantajs">   
+                <HashRouter>
+                    <Navbar collapseOnSelect expand = "lg" bg = "dark" variant = "dark" sticky = "top">
+                        <Navbar.Brand>
+                            <NavLink to = "/">Alex Feeley</NavLink>
+                        </Navbar.Brand>
+                        <Navbar.Toggle aria-controls = "responsive-navbar-nav"/>
+                        <Navbar.Collapse id = "responsive-navbar-nav">
+                            <Nav className = "ml-auto">
+                                <NavLink to = "/about">About</NavLink>
+                                <NavLink to = "/education">Education</NavLink>
+                                <NavLink to = "/experience">Experience</NavLink>
+                                <NavLink to = "/projects">Projects</NavLink>
+                                <NavLink to = "/contact">Contact</NavLink>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Navbar>
+
+                    <div className="content">
+                        <Route exact path = "/" component = { Landing }/>
+                        <Route path = "/about" component = { About }/>
+                        <Route path = "/education" component = { Education }/>
+                        <Route path = "/experience" component = { Experience }/>
+                        <Route path = "/projects" component = { Projects }/>
+                        <Route path = "/contact" component = { Contact }/>
+                    </div>
+                </HashRouter>
             </div>
         );
     }
