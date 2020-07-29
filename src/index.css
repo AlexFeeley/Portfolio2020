@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #838bc2;
+    background-color: #D7D4DD;
     margin: 0;
 }
 h1, h2, h3, h4, h5, h6, ul, li, p { 
@@ -40,19 +40,27 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
 
 
 /* Landing Page */
+.container {
+    height: 100vh;
+    width: auto;
+}
 .btn {
     background-color: transparent !important;
-    border: 1.5px solid #D7D4DD !important;
+    border: 1.5px solid #333F63 !important;
     border-radius: 50px !important;
-}
-.btn .nav-link:hover {
-    border: none;
-    color: #333F63 !important;
-    text-decoration: none;
 }
 .btn:focus {
     outline: 0;
     box-shadow: none !important;
+}
+.button-link {
+    color: #333F63;
+}
+
+.btn .button-link:hover {
+    border: none;
+    color: #D7D4DD !important;
+    text-decoration: none;
 }
 
 /* About Page */

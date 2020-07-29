@@ -46,7 +46,7 @@ class Education extends Component {
                         </Row>
                     </Col>
                     <Col xs = {12} md = {3} className = "justify-content-center text-center order-1 order-md-2">
-                        <Image src = "img/bxsci.png"/>
+                        <Image src = "img/bxsci.png" roundedCircle/>
                     </Col>
                 </Row>
             </Jumbotron>

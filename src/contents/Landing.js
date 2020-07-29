@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, NavLink } from 'react-router-dom';
 import HALO from 'vanta/dist/vanta.halo.min';
-import { Jumbotron, Container, Button } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 import About from './About';
 
 class Landing extends Component {
@@ -25,17 +25,17 @@ class Landing extends Component {
     }
     render() {
         return (
-            <Jumbotron fluid ref = {this.vantaRef}>
+            <Container fluid ref = {this.vantaRef}>
                 <Container className = "align-content-center">
                     <h1 className = "lead">Hi, I'm</h1>
                     <h1 className = "display-3">Alex Feeley.</h1>
                     <h1 className = "lead">I'm a Junior at Vanderbilt studying Computer Engineering 
                     with a passion for creating cool stuff.</h1>
-                    <Button><NavLink to = "/about" className = "nav-link">Want to learn more?</NavLink></Button>
+                    <Button><NavLink to = "/about" className = "button-link">Want to learn more?</NavLink></Button>
                 </Container>
 
                 <Route path = "/about" component = { About }/>
-            </Jumbotron>
+            </Container>
         );
     }
 }
