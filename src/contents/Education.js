@@ -30,6 +30,15 @@ class Education extends Component {
                             <h6>Activities: VUcept, Code Ignite, SyBBURE Searle Undergraduate Research Program, 
                             Theta Tau Professional Engineering Fraternity</h6>
                         </Row>
+                        <Row className = "justify-content-center text-center">
+                            <h6>Current Coursework: Algorithms, Embedded Systems, Numerical Mathmematics, VLSI Design, 
+                                Foundations of Hybrid and Embedded Systems</h6>
+                        </Row>
+                        <Row className = "justify-content-center text-center">
+                            <h6>Past Coursework: FPGA Design, Intermediate Software Design, Data Structures, Microcontrollers,
+                                Microelectronic Systems, Electronics I, Circuits I &amp; II, Digital Logic, Computer Organization,
+                                Linear Algebra, Differential Equations</h6>
+                        </Row>
                     </Col>
                 </Row>
                 <Row>
@@ -43,6 +52,9 @@ class Education extends Component {
                         <Row className = "justify-content-center text-center">
                             <h6>Activities: Big Sibs, National Honors Society, Varsity Soccer Team, Varsity Softball 
                                 Team, Chess Team </h6>
+                        </Row>
+                        <Row className = "justify-content-center text-center">
+                            <h6>Relevant Coursework: Physics I &amp; II, Multivariable Calculus</h6>
                         </Row>
                     </Col>
                     <Col xs = {12} md = {3} className = "justify-content-center text-center order-1 order-md-2">
