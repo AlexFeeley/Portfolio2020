@@ -26,22 +26,22 @@ class About extends Component {
                             target = "_blank" rel = "noopener noreferrer">listening</a> to, or start a <a href = 
                             "mailto:alexandra.feeley.lamb@vanderbilt.edu" target = "_blank" rel = "noopener noreferrer">conversation!</a></h5></Row>
                         <Row className = "justify-content-center">
-                            <Col xs = {6} md = {3} className = "justify-content-center">
+                            <Col xs = {3} className = "justify-content-center text-center">
                                 <a href = "https://github.com/AlexFeeley" target = "_blank" rel = "noopener noreferrer">
                                     <i class = "fab fa-github"></i>
                                 </a>
                             </Col>
-                            <Col xs = {6} md = {3} className = "justify-content-center">
+                            <Col xs = {3} className = "justify-content-center text-center">
                                 <a href = "https://www.linkedin.com/in/alex-feeley/" target = "_blank" rel = "noopener noreferrer">
                                     <i class = "fab fa-linkedin-in"></i>
                                 </a>
                             </Col>
-                            <Col xs = {6} md = {3} className = "justify-content-center">
+                            <Col xs = {3} className = "justify-content-center text-center">
                                 <a class = "icon" href = "mailto:alexandra.feeley.lamb@vanderbilt.edu" rel = "noopener noreferrer">
                                     <i class = "far fa-envelope"></i>
                                 </a>
                             </Col>
-                            <Col xs = {6} md = {3} className = "justify-content-center">
+                            <Col xs = {3} className = "justify-content-center text-center">
                                 <a href = "https://open.spotify.com/user/22xjhwn3qw6g3nxnyra2oycki?si=0etDI5Y7TzK-HsD0kbEX0A" target = "_blank" rel = "noopener noreferrer">
                                     <i class="fab fa-spotify"></i>
                                 </a>
