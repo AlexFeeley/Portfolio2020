@@ -5,18 +5,20 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #D7D4DD;
+    background-color: #838bc2;
     margin: 0;
 }
-h1, h2, h3, h4, h5, ul, li, p { 
+h1, h2, h3, h4, h5, h6, ul, li, p { 
     color: #333F63;
     font-family: "Poppins", sans-serif;
 }
 .jumbotron {
     height: 90vh;
-    /* background-color: #D7D4DD; */
+    background-color: transparent !important;
     padding: none;
     border: none;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 /* Navbar */
@@ -54,6 +56,9 @@ h1, h2, h3, h4, h5, ul, li, p {
 }
 
 /* About Page */
+body .about {
+    background-color: #D7D4DD;
+}
 .about span, .about a {
     color: #715C8C;
 }
@@ -66,14 +71,26 @@ h1, h2, h3, h4, h5, ul, li, p {
     font-size: 100px;
     display: inline-block;
     margin: 2%;
-    color: #715C8C;
+    color: #333F63;
     text-decoration: none;
 }
+@media only screen and (max-width: 700px){
+    .about a i {
+        font-size: 60px;
+    }
+}
 .about a i:hover, .about a i:active {
-    color: #333F63;
+    color: #838BC2;
 }
 
 /* Education Page */
+.education body {
+    background-color: #D7D4DD;
+}
+.education .col {
+    justify-content: center;
+    text-align: center;
+}
 
 /* Experience Page */
 
