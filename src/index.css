@@ -97,3 +97,9 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
 /* Experience Page */
 
 /* Projects Page */
+
+/* TESTING */
+.about h1, .education h1, .experience h1 {
+    color: #715C8C;
+    font-weight: bold;
+}
