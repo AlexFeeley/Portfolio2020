@@ -9,6 +9,7 @@ import Landing from './contents/Landing';
 import About from './contents/About';
 import Education from './contents/Education';
 import Experience from './contents/Experience';
+import Research from './contents/Research';
 import Projects from './contents/Projects';
 import './index.css';
 
@@ -27,6 +28,7 @@ class Main extends Component {
                             <Nav className = "ml-auto">
                                 <NavLink to = "/about" className = "nav-link">About</NavLink>
                                 <NavLink to = "/education" className = "nav-link">Education</NavLink>
+                                <NavLink to = "/research" className = "nav-link">Research</NavLink>
                                 <NavLink to = "/experience" className = "nav-link">Experience</NavLink>
                                 <NavLink to = "/projects" className = "nav-link">Projects</NavLink>
                             </Nav>
@@ -41,6 +43,7 @@ class Main extends Component {
                         />
                         <Route path = "/about" component = { About }/>
                         <Route path = "/education" component = { Education }/>
+                        <Route path = "/research" component = { Research }/>
                         <Route path = "/experience" component = { Experience }/>
                         <Route path = "/projects" component = { Projects }/>
                     </div>

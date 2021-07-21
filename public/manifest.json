@@ -1,7 +1,7 @@
 {
     "short_name": "Alex Feeley",
     "name": "Alex Feeley's Website",
-    "version": "0.0.1",
+    "version": "0.2.0",
     "icons": [{
         "src": "favicon.ico",
         "sizes": "64x64 32x32 24x24 16x16",

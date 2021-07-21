@@ -94,13 +94,24 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     justify-content: center;
     text-align: center;
 }
+.education a{
+    color: #333F63;
+    text-decoration: none;
+}
+.education a:hover, .education a:active {
+    color: #715C8C;
+    font-style: bold;
+    text-decoration: none;
+}
 
-/* Experience Page */
-
+/* Experience and Research Pages */
+.experience p, .research p{
+    text-align: justify;
+}
 /* Projects Page */
 
 /* TESTING */
-.about h1, .education h1, .experience h1 {
+.about h1, .education h1, .experience h1, .research h1{
     color: #715C8C;
     font-weight: bold;
 }
