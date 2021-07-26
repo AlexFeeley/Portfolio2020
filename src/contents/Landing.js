@@ -29,8 +29,8 @@ class Landing extends Component {
                 <Container className = "align-content-center">
                     <h1 className = "lead">Hi, I'm</h1>
                     <h1 className = "display-3">Alex Feeley.</h1>
-                    <h1 className = "lead">I'm a Junior at Vanderbilt studying Computer Engineering 
-                    with a passion for creating cool stuff.</h1>
+                    <h1 className = "lead">I'm a Senior at Vanderbilt studying Computer Engineering 
+                    with an interest in the intersection between hardware and software.</h1>
                     <Button><NavLink to = "/about" className = "button-link">Want to learn more?</NavLink></Button>
                 </Container>
 

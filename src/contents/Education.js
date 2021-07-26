@@ -39,7 +39,7 @@ class Education extends Component {
                             target="_blank" rel="noopener noreferrer">VUcept</a>, <a href = "https://anchorlink.vanderbilt.edu/organization/codeignite" 
                             target="_blank" rel="noopener noreferrer">Code Ignite</a>, <a href = "https://www.sybbure.org/" 
                             target="_blank" rel="noopener noreferrer">SyBBURE Searle Undergraduate Research Program</a>, 
-                            Theta Tau Professional Engineering Fraternity</h6>
+                            <a href = "https://studentorg.vanderbilt.edu/thetatau/" target="_blank" rel="noopener noreferrer">Theta Tau Professional Engineering Fraternity</a></h6>
                         </Row>
                         <Row className = "justify-content-center text-center">
                             <h6>Undergraduate Coursework: Embedded Systems, FPGA Design, Microcontrollers, Microelectronic Systems, 

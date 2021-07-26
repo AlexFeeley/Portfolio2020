@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import { Jumbotron } from "react-bootstrap";
+import { Jumbotron, Row } from "react-bootstrap";
 
 class Projects extends Component {
     render() {
         return (
-            <Jumbotron>
-                <h1>Projects</h1>
+            <Jumbotron className = "experience">
+                <Row className = "justify-content-center">
+                    <h1>Projects</h1>
+                </Row>
             </Jumbotron>
         );
     }

@@ -1,5 +1,4 @@
 /* General Color and Font Theme */
-
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +19,10 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     border: none;
     margin-left: 3%;
     margin-right: 3%;
+}
+.about h1, .education h1, .experience h1, .research h1, .projects h1{
+    color: #715C8C;
+    font-weight: bold;
 }
 
 /* Navbar */
@@ -108,10 +111,17 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
 .experience p, .research p{
     text-align: justify;
 }
-/* Projects Page */
-
-/* TESTING */
-.about h1, .education h1, .experience h1, .research h1{
+.experience a{
+    color: #333F63;
+    text-decoration: none;
+}
+.experience a:hover, .experience a:active {
     color: #715C8C;
-    font-weight: bold;
+    font-style: bold;
+    text-decoration: none;
+}
+
+/* Projects Page */
+.projects p{
+    text-align: justify;
 }
