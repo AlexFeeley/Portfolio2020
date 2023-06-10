@@ -5,171 +5,201 @@ class Experience extends Component {
     render() {
         return (
             <Jumbotron className = "experience">
-                <Row className = "justify-content-center">
-                    <h1>Experience</h1>
+                <Row className = "justify-content-center text-center">
+                    <Col xs = {12} md = {2}></Col>
+                    <Col xs = {12} md = {{span: 8, offset: 1}}>
+                        <Row className = "justify-content-left text-left">
+                            <h1>Experience</h1>
+                        </Row>
+                    </Col>  
                 </Row>
                 <Row className = "justify-content-center text-center">
                     <Col xs = {12} md = {2}>
-                        <Image src = "img/star.png" fluid/>
+                        <Image src = "/img/microsoft.png" fluid/>
                     </Col>
                     <Col xs = {12} md = {{span: 8, offset: 1}}>
-                        <Row className = "justify-content-center text-center">
-                            <h3>Intermediate Software Design</h3>
+                        <Row className = "justify-content-left text-left">
+                            <h3><b>Microsoft</b></h3>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h5><i>Teaching Assistant, August 2020 - Present</i></h5>
+                        <Row className = "justify-content-left text-left">
+                            <h5><i>Hardware Engineer II, August 2022 - Present</i></h5>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <p>As a teaching assistant for intermediate software design, or CS 3251, I grade weekly quizzes and 
-                            assignments for over 150 students across 3 sections. Additionally, I hold three hours of office hours 
-                            each week to aid with programming assignments and exams surrounding software design patterns and 
-                            intermediate C++ features.</p>
+                        <Row className = "justify-content-left text-left">
+                            <p>At Microsoft, I am a hardware engineer II for the platform systems engineering group. I support the integration
+                                and validation of 40+ <span>AI supercomputer</span> (AISC) subsystems through <span>in-lab support</span>, process development, documentation,
+                                and collaboration with partner teams, achieving pivotal program milestones. I spend most days in our lab in Redmond supporting
+                                bring-up.</p>
+                            <p>I am developing <span>system architecture</span> diagrams outlining fault detection and recovery scenarios for AISC subsystems by analyzing system
+                                architecture, circuit diagrams, firmware, and software. This has enabled me to provide recommendations to drive system enhancements.
+                                Additionally, I am implementing automated system validation scripts in <span>Python, PowerShell,</span> and <span>Bash</span> to 
+                                confirm serial communication, firmware versions, and workload execution. So far, I have reduced system validation time from 2 days to 2 hours, 
+                                facilitating bug replication and comprehensive patch testing by partner teams.</p>
                         </Row>      
                     </Col>
                 </Row>
                 <Row className = "justify-content-center text-center">
                     <Col xs = {12} md = {2}>
-                        <Image src = "img/boeing.png" fluid/>
+                        <Image src = "/img/ibm.png" fluid/>
                     </Col>
                     <Col xs = {12} md = {{span: 8, offset: 1}}>
-                        <Row className = "justify-content-center text-center">
-                            <h3>The Boeing Company</h3>
+                        <Row className = "justify-content-left text-left">
+                            <h3><b>International Business Machines</b></h3>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h5><i>Microelectronics Intern, May 2020 - August 2020</i></h5>
+                        <Row className = "justify-content-left text-left">
+                            <h5><i>Hardware Engineer Intern, August 2021 - December 2021</i></h5>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <p>This past summer, I worked as a Microelectronics intern with the Solid State Electronics and Development 
+                        <Row className = "justify-content-left text-left">
+                            <p>After my third year at Vanderbilt, I worked as a hardware engineer intern on the <a href = "https://www.ibm.com/products/pcie-cryptographic-coprocessor" target="_blank" rel="noopener noreferrer">
+                            hardware security processor</a> for IBM Z. I worked on the CEX7S processor, a programmable PCIe card used on IBM mainframes
+                            and servers to offload computationally expensive <span>cryptographic operations</span>. By re-configuring and incorporating <span>FreeRTOS</span> into the CEX7S, 
+                            I enabled multi-threading in <span>C</span> for cryptographic operations. Previously, this had been bare-metal C code which did not support
+                            multi-threading. Through this, I achieved a 19% improvement in throughput for secure encoding protocols.</p>
+                            
+                            <p>Additionally, I optimized the <span>C</span> software which ran on the CEX7S processor by implementing updates to stack trace logging 
+                            and introducing exception handling mechanisms. This reduced the development debug time 5x, enhancing overall software reliability and efficiency.</p>
+                        </Row>      
+                    </Col>
+                </Row>
+                <Row className = "justify-content-center text-center">
+                    <Col xs = {12} md = {2}>
+                        <Image src = "/img/boeing.png" fluid/>
+                    </Col>
+                    <Col xs = {12} md = {{span: 8, offset: 1}}>
+                        <Row className = "justify-content-left text-left">
+                            <h3><b>The Boeing Company</b></h3>
+                        </Row>
+                        <Row className = "justify-content-left text-left">
+                            <h5><i>Hardware Engineer Intern, May 2020 - August 2020</i></h5>
+                        </Row>
+                        <Row className = "justify-content-left text-left">
+                            <p>After my second year at Vanderbilt, I worked as a hardware engineer intern with the Solid State Electronics and Development 
                                 department at Boeing. I worked on two projects: I supported an existing project based out of Huntington Beach, 
                                 CA and also began my own project with the guidance of the team in Tukwila, WA. 
                             </p>
-                            <p>For the project in Huntington Beach, I worked on replacing legacy system architecture using C and 
-                                VHDL on an Artix-7 FPGA. Additionally, I aided in debugging and verifying existing code for the 
-                                same system. This project was especially interesting because the hardware and FPGAs I used were 
-                                based in California, so I had to remote-on to interact with the hardware and communicate with my 
-                                team if I needed something physically done.
+                            <p>For the project in Huntington Beach, I worked on replacing legacy system architecture using <span>C</span> and 
+                                <span> VHDL</span> on an Artix-7 FPGA. This extended the operational lifetime of these systems by over 20 years.
+                                Additionally, I aided in debugging and verifying firmware for this system. This project was especially interesting
+                                because the hardware that I had to use was based in California, where I was not. This provided valuable experience in 
+                                collaboration and communication as I was not able to physically interact with the hardware and FPGAs I used on a daily
+                                basis. 
                             </p>
-                            <p>For my other project, I was given the task of creating an application that allowed future test 
-                                software to be debugged before test chips could be fabricated. The test chips were created to 
-                                evaluate the effects of radiation on 14 nm FinFET technology. Over the summer, I was able to 
-                                develop an application which emulated the function of the test chip using Verilog on a Xilinx 
-                                Zynq-7000 FPGA. Ultimately, this emulation sped up the development process by allowing the test 
-                                chip to be actively debugged during fabrication.   
-                            </p>
-                        </Row>
-                    </Col>
-                </Row>
-                <Row className = "justify-content-center text-center">
-                    <Col xs = {12} md = {2}>
-                        <Image src = "img/isde.png" fluid/>
-                    </Col>
-                    <Col xs = {12} md = {{span: 8, offset: 1}}>
-                        <Row className = "justify-content-center text-center">
-                            <h3>Institute for Space and Defense Electronics</h3>
-                        </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h5><i>Undergraduate Researcher, August 2019 - Present</i></h5>
-                        </Row>
-                        <Row className = "justify-content-center text-center">
-                            <p>At Vanderbilt, I work as an undergraduate researcher under Dr. Bhuva with the Institute of 
-                                Space and Defense Electronics. I am currently evaluating the effects of temperature on single 
-                                event upsets on 7 nm FinFET technology. I run experiments to test hypotheses regarding radiation 
-                                characterization, and then analyze the data to create figures. Additionally, I have worked on 
-                                evaluating the effects of total ionizing dose and single event effects on 5 nm and 7 nm FinFET 
-                                technology. My work will be published in several papers later this fall. 
+                            <p>For my other project, I developed a <span>Verilog-</span>based emulation of a 14-nm bulk finFET radiation test chip on a 
+                                Xilinx Zynq-7000 FPGA. The test chips were created to evaluate the <span>effects of radiation</span> on 14-nm bulk finFET
+                                technologies used in military and space applications. The emulation I created sped up bring-up by over 3 weeks as it enabled
+                                concurrent debugging of the firmware while the physical chip was still in fabrication.   
                             </p>
                         </Row>
                     </Col>
                 </Row>
                 <Row className = "justify-content-center text-center">
                     <Col xs = {12} md = {2}>
-                        <Image src = "img/sybbure.png" fluid/>
+                        <Image src = "/img/isde.png" fluid/>
                     </Col>
                     <Col xs = {12} md = {{span: 8, offset: 1}}>
-                        <Row className = "justify-content-center text-center">
-                            <h3>SyBBURE Searle Undergraduate Research Program</h3>
+                        <Row className = "justify-content-left text-left">
+                            <h3><b>Institute for Space and Defense Electronics</b></h3>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h5><i>Participant, May 2019 - Present</i></h5>
+                        <Row className = "justify-content-left text-left">
+                            <h5><i>Graduate Research Assistant, August 2019 - May 2022</i></h5>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <p>As a part of the SyBBURE Searle Undergraduate Research 
-                                Program, I receive competitive year-round funding to 
-                                take part in undergraduate research. Each week, I present 
-                                updates on my research to an interdisciplinary group of 
-                                undergraduates. Additionally, I take part in regular technical 
-                                and soft skills training with the other students in the program.</p>
+                        <Row className = "justify-content-left text-left">
+                            <p>I spent 3 years as a research assistant for Dr. Bharat Bhuva studying the <span>effects of radiation </span>
+                                on circuits. We focused on circuits used in military and space application that were destined for harsh environments:
+                                high altitude, low power, and high temperature. I designed and implemented test environments to simulate these harsh 
+                                conditions, conducting physical experiments and circuit simulations to explore the radiation effects on circuit 
+                                performance. For physical experiments, I used a 1cm × 1cm 10 µCi241 Americium foil button source, ARACOR x-ray chamber, 
+                                pelletron electrostatic particle accelerator, and 88-inch cyclotron to provide beams of heavy ions, protons, and neutrons.
+                                Additionally, I used Cadence Xcellium to run circuit-level <span>SPICE simulations</span> and Synopsys Sentaurus to perform <span>TCAD simulations</span>. 
+                                The cumulation of my research resulted in the Master's thesis titled, 
+                                <a href = "http://hdl.handle.net/1803/17400" target="_blank" rel="noopener noreferrer"><i> The Analysis of Single Event Effects 
+                                and Total Ionizing Dose Radiation for the 7-nm Bulk FinFET Technology Node</i></a>. This also resulted in <a href="#/publications">
+                                11 publications</a> exploring the effect of radiation on 5-nm and 7-nm bulk finFET technologies.</p>
                         </Row>
                     </Col>
                 </Row>
                 <Row className = "justify-content-center text-center">
                     <Col xs = {12} md = {2}>
-                        <Image src = "img/vibre.png" fluid/>
+                        <Image src = "/img/vibre.png" fluid/>
                     </Col>
                     <Col xs = {12} md = {{span: 8, offset: 1}}>
-                        <Row className = "justify-content-center text-center">
-                            <h3>Vanderbilt Institute for Integrative Biosystems Research and Education</h3>
+                        <Row className = "justify-content-left text-left">
+                            <h3><b>Vanderbilt Institute for Integrative Biosystems Research and Education</b></h3>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h5><i>Undergraduate Researcher, May 2019 - August 2019</i></h5>
+                        <Row className = "justify-content-left text-left">
+                            <h5><i>Undergraduate Research Assistant, May 2019 - August 2019</i></h5>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <p>Last summer, as a participant in the SyBBURE Searle Undergraduate Research 
-                                Program, I designed a wearable, noninvasive sensor to measure the concentration 
+                        <Row className = "justify-content-left text-left">
+                            <p>After my first year at Vanderbilt, I became a SyBBURE Searle Undergraduate Research Fellow.
+                                This was my first research experience where I designed a wearable, noninvasive sensor to measure the concentration 
                                 of vitamin A in humans. The sensor was based on a pulse oximeter: a current 
                                 non-invasive device that utilizes an LED and a photodiode of specific wavelengths 
                                 to determine the oxygen level of the blood. In order to design the device, I read 
                                 over 70 papers from medical journals to learn about the human physiology necessary 
                                 to ensure the methods would properly measure the vitamin A concentration. Based on 
-                                the knowledge I gained from these papers, I designed two circuits: an LED circuit 
+                                the knowledge I gained from these papers, I <span>designed two circuits</span>: an LED circuit 
                                 and a photodiode circuit. The LED circuit utilized an NE555 timer to drive the LED 
                                 at a pre-determined frequency and duty cycle. The photodiode circuit used a 
-                                trans-impedance amplifier to convert the photodiode’s small current into a voltage. 
-                                A low pass filter was employed to remove the photodiode’s response that occurred 
-                                above the LED’s driven frequency. Throughout the design of these circuits, I used 
-                                LTSpice to simulate and de-bug my circuits. I provided my mentor with a report 
-                                summarizing all the research that was conducted along with a file containing all 
-                                relevant information. This research will be used as the basis for a future project 
-                                for a new participant in SyBBURE. </p>
+                                trans-impedance amplifier to convert the photodiode’s small current into a voltage and 
+                                a low pass filter for high-frequency noise. Throughout the design of these circuits, I used 
+                                <span> LTSpice</span> to simulate and de-bug my circuits. I provided my mentor with a report 
+                                summarizing the research that I conducted along with a file containing all 
+                                relevant information. This research was later used as the basis for a project 
+                                for another SyBBURE undergraduate reserach fellow. </p>
                         </Row>
                     </Col>
                 </Row>
                 <Row className = "justify-content-center text-center">
                     <Col xs = {12} md = {2}>
-                        <Image src = "img/wmp.png" fluid/>
+                        <Image src = "/img/star.png" fluid/>
                     </Col>
                     <Col xs = {12} md = {{span: 8, offset: 1}}>
-                        <Row className = "justify-content-center text-center">
-                            <h3>The Westfield Memorial Pool</h3>
+                        <Row className = "justify-content-left text-left">
+                            <h3><b>Vanderbilt University</b></h3>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h5><i>Manager, May 2018 - August 2018</i></h5>
+                        <Row className = "justify-content-left text-left">
+                            <h5><i>Computer Networks Teaching Assistant, January 2022 - May 2022</i></h5>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h5><i>Swim Instructor, June 2016 - August 2018</i></h5>
+                        <Row className = "justify-content-left text-left">
+                            <p>I spent my last semester at Vanderbilt as a teaching assistant for computer networks (CS 4283). The course gave an introduction to computer communications 
+                                and network architecture by focusing on algorithm and protocol design at each layer of the network stack, cross-layer interactions and performance analysis, 
+                                and network simulation tools. I served as a grader for the weekly quizzes and programming assignments and held four hours of office hours a week to aid students
+                                in their programming assignments which used <span>C, Java, TCL,</span> and <span>Wireshark</span>.</p>
+                        </Row>     
+                        <Row className = "justify-content-left text-left">
+                            <h5><i>Software Design Patterns Teaching Assistant, August 2020 - May 2021</i></h5>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h5><i>Lifeguard, July 2015 - August 2018</i></h5>
-                        </Row>
-                        <Row className = "justify-content-center text-center">
-                            <p>I was first employed by Westfield Memorial Pool at the age of 
-                                15 and I continued to work there for four summers. I started 
-                                as a lifeguard and learned how a 20 staff pool could function 
-                                as a team during emergencies to help patrons who were in distress. 
-                                During my second summer, I became a swim instructor and taught 
-                                both group and private swim lessons. In group lessons, I worked 
-                                with a second instructor to teach ten children of different skill 
-                                levels how to swim through various drills and activities. Besides 
-                                keeping ten young kids engaged for a full lesson, I learned how 
-                                to effectively engage with other instructors. In 2018, before 
-                                beginning my freshman year of college, I was promoted to Assistant 
-                                Manager. My primary role was to function as a liaison for the staff 
-                                of 60 lifeguards as new management came in and sought to make changes. 
-                                I worked to facilitate appropriate communication between upper 
-                                management and the head lifeguards of the pool.</p>
+                        <Row className = "justify-content-left text-left">
+                            <p>I spent my third year at Vanderbilt as a teaching assignments for intermediate software design (CS 3251). The course focused on high quality development
+                                and reuse of architectural patterns, design patterns, and software components. This was done by using programming assignments and bi-weekly quizzes to cover
+                                the theoretical and practical aspects of developing, documenting, testing, and applying reusable class libraries and object-oriented frameworks in C++. I 
+                                served as a grader for these varied <span>C++</span> programming assignments and help 3 hours of office hours each week to aid students as they implemented
+                                these foundations. </p>
+                        </Row>   
+                        <Row className = "justify-content-left text-left">
+                            <h5><i>Lifeguard and Swim Instructor, May 2019 - March 2020</i></h5>
                         </Row>
                     </Col>
                 </Row>
+                <Row className = "justify-content-center text-center">
+                    <Col xs = {12} md = {2}>
+                        <Image src = "/img/wmp.png" fluid/>
+                    </Col>
+                    <Col xs = {12} md = {{span: 8, offset: 1}}>
+                        <Row className = "justify-content-left text-left">
+                            <h3><b>The Westfield Memorial Pool</b></h3>
+                        </Row>
+                        <Row className = "justify-content-left text-left">
+                            <h5><i>Assistant Manager, May 2018 - August 2018</i></h5>
+                        </Row>
+                        <Row className = "justify-content-left text-left">
+                            <h5><i>Swim Instructor, June 2016 - August 2018</i></h5>
+                        </Row>
+                        <Row className = "justify-content-left text-left">
+                            <h5><i>Lifeguard, July 2015 - August 2018</i></h5>
+                        </Row>
+                    </Col>
+                </Row>
+                {/* <Route path = "/publications" component = { Publications }/> */}
             </Jumbotron>
         );
     }

@@ -6,12 +6,16 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #D7D4DD;
+    background-color: #D2E9E9;
     margin: 0;
 }
-h1, h2, h3, h4, h5, h6, ul, li, p { 
-    color: #333F63;
+h1, h2, h3, h4, h5, h6, ul, ol, li, p, .publications a { 
+    color: #0A4D68;
     font-family: "Poppins", sans-serif;
+}
+.about h1, .education h1, .experience h1, .projects h1, .publications h1 {
+    color: #0A4D68;
+    font-weight: bold;
 }
 .jumbotron {
     height: 90vh;
@@ -24,69 +28,92 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
 
 /* Navbar */
 .nav-bar {
-    background-color: #838BC2;
+    background-color: #0A4D68;
 }
 .nav-link {
-    color: #D7D4DD !important; 
+    color: #D2E9E9 !important; 
     font-style: bold;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     padding: 8px;
+    text-decoration: none;
 }
 .nav-link:hover {
-    border-bottom: 2px solid #333F63;
-    color: #333F63;
+    /* border-bottom: 2px solid #0A4D68; */
+    color: #088395;
     text-decoration: none;
 }
 
 
-/* Landing Page */
-.container {
-    height: 91vh;
-    width: auto;
+/* Landing Page Button */
+@media only screen and (min-width: 700px){
+    .container {
+        height: 80vh;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 700px){
+    .container {
+        margin: 10vh;
+    }
 }
 .btn {
     background-color: transparent !important;
-    border: 1.5px solid #333F63 !important;
+    border: 1.5px solid #0A4D68 !important;
     border-radius: 50px !important;
+    width: 20%;
+}
+@media only screen and (max-width: 700px){
+    .btn {
+        width: 50%;
+    }
 }
 .btn:focus {
     outline: 0;
     box-shadow: none !important;
 }
 .button-link {
-    color: #333F63;
+    color: #0A4D68;
 }
 
 .btn .button-link:hover {
     border: none;
-    color: #D7D4DD !important;
+    color: #088395 !important;
     text-decoration: none;
 }
 
-/* About Page */
-.about span, .about a {
-    color: #715C8C;
+/* Landing Page */
+.landing {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: left;
 }
-.about a:hover, .about a:active {
-    color: #333F63;
+
+/* Hyper Links */
+.about span, .about a, .education a, .experience span, .experience a, .education span {
+    color: #088395;
+}
+.about a:hover, .about a:active, .education a:hover, .education a:active, .experience a:active, .experience a:hover  {
+    color: #0A4D68;
     font-style: bold;
     text-decoration: none;
 }
-.about a i {
+.about a i, .education a i {
     font-size: 100px;
     display: inline-block;
     margin: 2%;
-    color: #333F63;
+    color: #0A4D68;
     text-decoration: none;
 }
 @media only screen and (max-width: 700px){
-    .about a i {
+    .about a i, .education a i {
         font-size: 60px;
     }
 }
-.about a i:hover, .about a i:active {
-    color: #838BC2;
+.about a i:hover, .about a i:active, .education a i:hover, .education a i:hover, .publications a:hover, .publications a:active {
+    color: #088395;
+    text-decoration: none;
 }
 
 /* Education Page */
@@ -95,12 +122,26 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     text-align: center;
 }
 
-/* Experience Page */
+/* Publications Ordered List */
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 
-/* Projects Page */
+ol {
+    counter-reset: list;
+}
 
-/* TESTING */
-.about h1, .education h1, .experience h1 {
-    color: #715C8C;
-    font-weight: bold;
+ol > li {
+    list-style: none;
+    position: relative;
+}
+
+ol > li:before {
+    content: "[" counter(list) "]";
+    counter-increment: list;
+    left: -40px;
+    padding-right: 10px;
+    position: absolute;
+    text-align: right;
+    width: 40px;
 }

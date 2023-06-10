@@ -5,60 +5,64 @@ class Education extends Component {
     render() {
         return (
             <Jumbotron className = "education">
-                <Row className = "justify-content-center">
-                    <h1>Education</h1>
+                <Row className = "justify-content-left">
+                    <Col xs = {12} md = {3}></Col>
+                    <Col xs = {12} md = {{span: 7, offset: 1}}>
+                        <Row className = "justify-content-left text-left">
+                            <h1>Education</h1>
+                        </Row>
+                    </Col>  
                 </Row>
-                <Row className = "justify-content-center text-center">
+                <Row className = "justify-content-left text-left">
                     <Col xs = {12} md = {3}>
                         <Image src = "img/vandy.png" fluid/>
                     </Col>
-                    <Col xs = {12} md = {{span: 7, offset: 1}}>
-                        <Row className = "justify-content-center text-center">
-                            <h3>Vanderbilt University</h3>
+                    <Col xs = {12} md = {{span: 7, offset: 1}} >
+                        <Row className = "justify-content-left text-left">
+                            <h3><b>Vanderbilt University</b></h3>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h5><i>Expected Bachelor of Engineering in Computer Engineering &amp; Math, May 2022</i></h5>
+                        <Row className = "justify-content-left text-left">
+                            <h5><b>Master of Science in Electrical Engineering, May 2022</b></h5>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h5><i>Expected Master of Science in Electrical Engineering, May 2022</i></h5>
+                        <Row>
+                            <h6><em>Advisor:</em> Bharat Bhuva</h6>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h6>Honors: IEEE Eta Kappa Nu Honor Society (Top 25% of EE/CompE class), Dean's List
-                            (Fall 2018, Fall 2019, Spring 2020)</h6>
+                        <Row>
+                            <h6><i>Thesis:</i> <a href = "http://hdl.handle.net/1803/17400" target="_blank" rel="noopener noreferrer">The Analysis of Single Event Effects and Total Ionizing Dose Radiation for the 7-nm Bulk FinFET Technology Node</a></h6>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h6>Activities: VUcept, Code Ignite, SyBBURE Searle Undergraduate Research Program, 
-                            Theta Tau Professional Engineering Fraternity</h6>
+                        <Row>
+                            <h6><i>Relevant Coursework:</i> FPGA Design, Digitial Systems Architecture, VLSI Design, Hybrid &amp; Embedded Systems, AI for Cyber-Physical
+                            Systems, Deep Learning, Software Design Patterns, Algorithms &amp; Data Structures</h6>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h6>Current Coursework: Algorithms, Embedded Systems, Numerical Mathmematics, VLSI Design, 
-                                Foundations of Hybrid and Embedded Systems</h6>
+                        <Row className = "justify-content-left text-left">
+                            <h5><b>Bachelor of Engineering in Computer Engineering &amp; Math,</b> May 2022</h5>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h6>Past Coursework: FPGA Design, Intermediate Software Design, Data Structures, Microcontrollers,
-                                Microelectronic Systems, Electronics I, Circuits I &amp; II, Digital Logic, Computer Organization,
-                                Linear Algebra, Differential Equations</h6>
+                        <Row className = "justify-content-left text-left">
+                            <h6><i>Honors and Awards:</i> Criley Award (Top ECE Interdisciplinary Capstone Project), 
+                                IEEE Eta Kappa Nu Honor Society (Top 25% of ECE class), 
+                                SyBBURE Searle Undergraduate Research Fellow, Dean's List (7 semesters)</h6>
+                        </Row>
+                        <Row className = "justify-content-left text-left">
+                            <h6><i>Activities:</i> VUcept First-Year Peer Mentor, Theta Tau Professional Engineering Fraternity</h6>
                         </Row>
                     </Col>
                 </Row>
+                <Row><br></br></Row>
                 <Row>
-                    <Col xs = {12} md = {{span: 7, offset: 1}} className = "order-2 order-md-1">
-                        <Row className = "justify-content-center text-center">
-                            <h3>The Bronx High School of Science</h3>
+                    <Col xs = {12} md = {3} className = "justify-content-center text-center order-1 order-md-1">
+                        <Image src = "img/bxsci.png" roundedCircle/>
+                    </Col>
+                    <Col xs = {12} md = {{span: 7, offset: 1}} className = "order-1 order-md-1">
+                        <Row className = "justify-content-left text-left">
+                            <h3><b>The Bronx High School of Science</b></h3>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h5><i>Advanced Regents Diploma, June 2018</i></h5>
+                        <Row className = "justify-content-left text-left">
+                            <h5><b>Advanced Regents Diploma,</b> June 2018</h5>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h6>Activities: Big Sibs, National Honors Society, Varsity Soccer Team, Varsity Softball 
+                        <Row className = "justify-content-left text-left">
+                            <h6><i>Activities:</i> Big Sibs Peer Mentor, National Honors Society, Varsity Soccer Team, Varsity Softball 
                                 Team, Chess Team </h6>
                         </Row>
-                        <Row className = "justify-content-center text-center">
-                            <h6>Relevant Coursework: Physics I &amp; II, Multivariable Calculus</h6>
-                        </Row>
-                    </Col>
-                    <Col xs = {12} md = {3} className = "justify-content-center text-center order-1 order-md-2">
-                        <Image src = "img/bxsci.png" roundedCircle/>
                     </Col>
                 </Row>
             </Jumbotron>

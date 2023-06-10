@@ -9,7 +9,8 @@ import Landing from './contents/Landing';
 import About from './contents/About';
 import Education from './contents/Education';
 import Experience from './contents/Experience';
-import Projects from './contents/Projects';
+// import Projects from './contents/Projects';
+import Publications from './contents/Publications';
 import './index.css';
 
 
@@ -28,7 +29,8 @@ class Main extends Component {
                                 <NavLink to = "/about" className = "nav-link">About</NavLink>
                                 <NavLink to = "/education" className = "nav-link">Education</NavLink>
                                 <NavLink to = "/experience" className = "nav-link">Experience</NavLink>
-                                <NavLink to = "/projects" className = "nav-link">Projects</NavLink>
+                                <NavLink to = "/publications" className = "nav-link">Publications</NavLink>
+                                {/* <NavLink to = "/projects" className = "nav-link">Projects</NavLink> */}
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
@@ -42,7 +44,8 @@ class Main extends Component {
                         <Route path = "/about" component = { About }/>
                         <Route path = "/education" component = { Education }/>
                         <Route path = "/experience" component = { Experience }/>
-                        <Route path = "/projects" component = { Projects }/>
+                        <Route path = "/publications" component = { Publications }/>
+                        {/* <Route path = "/projects" component = { Projects }/> */}
                     </div>
                 </HashRouter>
             </div>
