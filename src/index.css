@@ -46,19 +46,8 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, p, .publications a {
 
 
 /* Landing Page Button */
-/* @media only screen and (min-width: 700px){
-    .container {
-        height: 80vh;
-        width: auto;
-    }
-}
-@media only screen and (max-width: 700px){
-    .container {
-        margin: 10vh;
-    }
-} */
 .container {
-    height: 80vh;
+    height: 70vh;
     width: 100%;
 }
 .btn {
