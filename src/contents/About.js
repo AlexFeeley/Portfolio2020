@@ -22,11 +22,13 @@ class About extends Component {
                         <Row><h5>I'm a hardware engineer at <span>Microsoft</span> and a <a href = 
                         "https://engineering.vanderbilt.edu/" target = "_blank" rel = "noopener noreferrer">
                         Vanderbilt University</a> graduate. </h5></Row>
-                        <Row><h5>I work on the Platform Systems Engineering team for the <span>Azure Hardware and System Infrastructure </span> 
-                             group at Microsoft where we're developing state-of-the-art <a href = "https://news.microsoft.com/source/features/innovation/openai-azure-supercomputer/" target="_blank" rel="noopener noreferrer">AI supercomputers</a>.</h5></Row>
+
+                        
+                        <Row><h5>I work on the Platform Systems Engineering team at Microsoft where we're developing state-of-the-art <a href = "https://news.microsoft.com/source/features/ai/in-house-chips-silicon-to-service-to-meet-ai-demand/" target="_blank" rel="noopener noreferrer">
+                            custom-silicon AI accelerators</a>.</h5></Row>
                         <Row><h5>In May of 2022, I completed my Master of Science in <span>Electrical Engineering</span> and my Bachelor of Engineering in <span>Computer Engineering </span>
                             &amp; <span>Math</span> at Vanderbilt University.</h5></Row>
-                        <Row><h5>In my free time, you can find me exploring Seattle, hiking up mountains, or volunteering with dogs at Seattle Humane.</h5></Row>
+                        <Row><h5>In my free time, you can find me exploring San Diego, hiking up mountains, or hanging out with my dog.</h5></Row>
                         <Row><h5>Feel free to <a href = "https://www.linkedin.com/in/alex-feeley/" target="_blank" rel="noopener noreferrer">
                             connect</a> with me, start a <a href = "mailto:alex.t.feeley@gmail.edu" target = "_blank" rel = "noopener noreferrer">conversation</a>, 
                             or check out my recent <a href = "https://www.strava.com/athletes/alexfeeley"

@@ -25,7 +25,19 @@ class Experience extends Component {
                             <h5><i>Hardware Engineer II, August 2022 - Present</i></h5>
                         </Row>
                         <Row className = "justify-content-left text-left">
-                            <p>At Microsoft, I am a hardware engineer II for the platform systems engineering group. I support the integration
+                            <p>
+                                At Microsoft, I am a hardware engineer II for the Platform Systems Engineering team. I've contributed to the development and integration 
+                                of over 40 AI supercomputer (AISC) subsystems, contributing to significant program milestones, including the successful unveiling 
+                                of the revolutionary Maia 100. 
+                            </p>
+                            <p>
+                                My cross-functional collaboration with hardware, firmware, and software teams has ensured a seamless integration process. I have further support this integration by providing in-lab support, 
+                                debugging issues, and actively participating in process development and documentation. Beyond my collaborative efforts, I've been a driving force 
+                                in championing automation on the team. Creating scripts in Python, PowerShell, and Bash, I've significantly reduced system validation time from 2 days to 2 hours and
+                                accelerated bug replication and resolution through efficient log collection and analysis. Additionally, I spearheaded the creation of a streamlined 
+                                pipeline for fully automated firmware checks and updates, increasing efficiency and ensuring updated systems for our partner teams. 
+                            </p>
+                            {/* <p>At Microsoft, I am a hardware engineer II for the platform systems engineering group. I support the integration
                                 and validation of 40+ <span>AI supercomputer</span> (AISC) subsystems through <span>in-lab support</span>, process development, documentation,
                                 and collaboration with partner teams, achieving pivotal program milestones. I spend most days in our lab in Redmond supporting
                                 bring-up.</p>
@@ -33,7 +45,7 @@ class Experience extends Component {
                                 architecture, circuit diagrams, firmware, and software. This has enabled me to provide recommendations to drive system enhancements.
                                 Additionally, I am implementing automated system validation scripts in <span>Python, PowerShell,</span> and <span>Bash</span> to 
                                 confirm serial communication, firmware versions, and workload execution. So far, I have reduced system validation time from 2 days to 2 hours, 
-                                facilitating bug replication and comprehensive patch testing by partner teams.</p>
+                                facilitating bug replication and comprehensive patch testing by partner teams.</p> */}
                         </Row>      
                     </Col>
                 </Row>
